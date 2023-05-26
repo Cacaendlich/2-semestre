@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="#" id="formcadastro">
@@ -14,10 +15,10 @@
             <th>B</th>
             <th>C</th>
             <th>D</th>
-           </tr>
-         -->
+           </tr> -->
+        
            <tr> <!--linha 1-->
-            <td colspan="4">CADASTRO DE ESTÁGIO</td>
+            <td colspan="4" class="title">CADASTRO DE ESTÁGIO</td>
            </tr>
 
            <tr> <!--linha 2-->
@@ -34,8 +35,8 @@
 
            <tr rowspan="2"> <!--linha 4-->
             <td><label for="nivelEscolar">Nível escolar: </label></td>
-            <td colspan="2">
-                <select name="nivelEscolar" id="nivelEscolar" size="3" required>
+            <td>
+                <select name="nivelEscolar" id="nivelEscolar" size="2" required>
                     <option value="1">Ensino Fundamental</option>
                     <option value="2">Ensino Médio</option>
                     <option value="3">Ensino Superior</option>
@@ -68,7 +69,7 @@
             </td>
            </tr>
 
-           <tr>
+           <tr class="enviarLimpar">
                 <td colspan="2"><input type="submit" value="Enviar"></td>
                 <td colspan="2"> <input type="reset" value="Limpar"></td>
            </tr>

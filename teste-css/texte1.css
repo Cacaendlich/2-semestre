@@ -1,0 +1,37 @@
+html{
+    background-image: url("chihiro045.jpg");
+}
+body {
+    background-color: rgba(240, 248, 255, 0.719);
+    border-radius: 10px;
+    /* border: 1px solid; */
+    margin: 20px 50px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(12, 51, 85, 0.719);
+    padding: 10px;
+}
+
+img {
+    /* display: block;: A propriedade display define como um elemento é exibido na página. Display: block; estamos fazendo com que a imagem se torne um elemento de bloco. Isso significa que a imagem irá ocupar todo o espaço horizontal disponível em seu contêiner e permitir que as margens sejam aplicadas a ela.
+    margin-left: auto; e margin-right: auto;: As propriedades margin-left e margin-right especificam as margens esquerda e direita do elemento. Ao definir tanto margin-left quanto margin-right como auto, estamos instruindo o navegador a calcular automaticamente e distribuir igualmente as margens esquerda e direita. Isso resulta no posicionamento centralizado da imagem horizontalmente dentro do seu contêiner. */
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border-radius: 50%;
+    border: 7px double rgba(255, 255, 255, 0.719);
+}
+
+h1 {
+    /* border: 1px solid red; */
+    text-align: center;
+
+}
+
+p {
+    /* border: 1px solid green; */
+    text-align: center;
+    margin: 20px;
+}
