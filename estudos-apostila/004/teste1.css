@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* form {
+    border: 1px solid;
+
+} */
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgb(195,34,135);
+    background: linear-gradient(0deg, rgba(195,34,135,1) 0%, rgba(253,251,45,1) 100%);
+   
+}
+
+html, body, #formcadastro{
+    width: 500px;
+    margin: 30px auto;
+}
+
+h1, p, fieldset{
+    width: 80%;
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    color: #c32287;
+}
+
+input,select{
+    border: none ;
+    border-radius: 3px;
+}
+
+.input-height{
+    height: 20px;
+}
+
+.enviar-limpar{
+    background-color: rgb(255, 255, 255);
+    color: #c32287;
+}
+
+fieldset{
+    border-color: #ffffff;
+}
+
