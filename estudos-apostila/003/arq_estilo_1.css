@@ -1,0 +1,11 @@
+h1, h2, h3 {
+    text-decoration: line-through;
+    text-align: center;
+    color: blue;
+}
+
+.texto_negrito{
+    text-align: center;
+    color: blueviolet;
+    font-weight: bold;
+}
