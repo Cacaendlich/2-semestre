@@ -5,6 +5,10 @@
 
 } */
 
+body {
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif)
+  }
+
 form {
     display: flex;
     justify-content: center;
@@ -12,7 +16,7 @@ form {
     flex-direction: column;
     border-radius: 10px;
     background: rgb(195,34,135);
-    background: linear-gradient(0deg, rgba(195,34,135,1) 0%, rgba(253,251,45,1) 100%);
+    background: linear-gradient(0deg, rgb(45, 9, 112) 0%, rgba(99, 253, 227, 0.726) 100%);
    
 }
 
@@ -29,7 +33,7 @@ h1, p, fieldset{
 }
 
 h1 {
-    color: #c32287;
+    color: rgb(45, 9, 112);
 }
 
 input,select{
@@ -43,7 +47,7 @@ input,select{
 
 .enviar-limpar{
     background-color: rgb(255, 255, 255);
-    color: #c32287;
+    color: rgb(45, 9, 112);
 }
 
 fieldset{
