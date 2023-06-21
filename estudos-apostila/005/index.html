@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <body>
+ <form name="formulario" method="post">
+ <p>Clique sobre o botão para apresentar o exemplo de estrutura sequencial.</p>
+ <button onclick="exemplo1()">Clique aqui!</button>
+ <p>Clique sobre o botão para apresentar o exemplo de estrutura condicional 
+SE(if).</p>
+ <p>Idade:<input type="text" name="txtIdade"></p>
+ <button onclick="exemplo2()">Clique aqui!</button>
+ <p>Clique sobre o botão para apresentar o exemplo de estrutura condicional 
+SE/SENÃO(if/else).</p>
+ <p>Idade:<input type="text" name="txtIdade2"></p>
+ <button onclick="exemplo3()">Clique aqui!</button>
+ <p>Clique sobre o botão para apresentar o exemplo das estruturas condicionais CASO (switch) e SE/SENÃO SE(if/else if).</p>
+ <p><input type="radio" name="rdTensao" value="110" checked>110v 
+ <input type="radio" name="rdTensao" value="220">220v 
+ Resistência:<input type="text" name="txtResistencia" value="1"></p>
+ <p><input type="radio" name="rdUnidade" value="T">Tera 
+ <input type="radio" name="rdUnidade" value="G">Giga
+ <input type="radio" name="rdUnidade" value="M">Mega
+ <input type="radio" name="rdUnidade" value="k">kilo
+ <input type="radio" name="rdUnidade" value="-" checked>-
+ <input type="radio" name="rdUnidade" value="m">mili
+ <input type="radio" name="rdUnidade" value="mi">micro
+ <input type="radio" name="rdUnidade" value="n">nano 
+ <input type="radio" name="rdUnidade" value="p">pico 
+ </p>
+ <button onclick="exemplo4()">Clique aqui!</button>
+ </form>
+ <script type="text/javascript">
+ <!--
+ function exemplo1(){ // Estrutura sequencial
+var raio = 2.5;
+var areaCirc = Math.PI * Math.pow(raio,2);
+alert("Área da Circunferência= " + areaCirc);
+ }
+ function exemplo2(){ // Estrutura condicional SE
+var idade = document.formulario.txtIdade.value;
+if(idade>=18){
+ alert("Você já tem a maior idade.");
+}
+ }
+ function exemplo3(){ // Estrutura condicional SE/SENÃO
+var idade = document.formulario.txtIdade2.value;
+if(idade>=18){
+ alert("Você já tem a maior idade.");
+} else {
+ alert("Você ainda não tem a maior idade.");
+}
+ }
+ function exemplo4(){// Estrutura condicional SE/SENÃO SE e CASO
+ var U = document.formulario.rdTensao.value;
+var R = document.formulario.txtResistencia.value;
+switch(document.formulario.rdUnidade.value) {
+ case "T" : R = R * Math.pow(10,12);
+ case "G" : R = R * Math.pow(10,9);
+ break;
+ case "M" : R = R * Math.pow(10,6);
+ break;
+ case "k" : R = R * Math.pow(10,3);
+ break;
+ case "-" : R = R * Math.pow(10,0);
+ break;
+ case "m" : R = R * Math.pow(10,-3);
+ break;
+ case "mi" : R = R * Math.pow(10,-6);
+ break;
+ case "n" : R = R * Math.pow(10,-9);
+ break;
+ case "p" : R = R * Math.pow(10,-12);
+ break;
+ default: alert("Unidade não identificada");
+ }
+var I = U/R;
+if(I<=Math.pow(10,-9)){
+ alert("Corrente menor que 10 elevado a -9.");
+} else if (I<=Math.pow(10,-6)){
+ alert("Corrente menor que 10 elevado a -6.");
+} else if (I<=Math.pow(10,-3)){
+ alert("Corrente menor que 10 elevado a -3.");
+} else if (I<=Math.pow(10,0)){
+ alert("Corrente menor que 10 elevado a 0.");
+} else if (I<=Math.pow(10,3)){
+ alert("Corrente menor que 10 elevado a 3.");
+} else if (I<=Math.pow(10,6)){
+ alert("Corrente menor que 10 elevado a 6.");
+} else if (I<=Math.pow(10,9)){
+ alert("Corrente menor que 10 elevado a 9.");
+} else if (I<=Math.pow(10,12)){
+ alert("Corrente menor que 10 elevado a 12.");
+} else {
+ alert("Corrente menor do que 10 elevado a 15.");
+}
+ }
+ -->
+ </script>
+ </body>
+ </html>
