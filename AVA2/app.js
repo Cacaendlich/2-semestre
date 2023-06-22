@@ -1,9 +1,4 @@
-    //var formulario = document.getElementById('formcadastro');
-    // var dataNascimento = document.getElementById('cdataNascimento').value;
-    // var genero = document.querySelector('input[name="Tgenero"]:checked').value;
     // var estadoCivil = document.getElementById('cEstadoCivil').value;
-    // var camposDeInteresse = document.getElementById('cEstadoCivil').value;
-    //alert(nome);
 
     function validarNome() {
         var nome = document.querySelector('input[name="tName"]').value;
@@ -26,10 +21,24 @@
             return false;
         }
     }
-    
-    function validar() {
-        if (validarEmail() && validarNome()) {
-            return true;
+
+    function validarData(){
+        var inputData = document.getElementById('cdataNascimento').value;
+        const dataNascimento = new Date(inputData);
+        
+        if(isNaN(dataNascimento)){
+            alert('Data de nascimento inválida');
+            return;
         }
     }
+
+
+    
+    // function validar() {
+    //     if (validarEmail == treu  && validarNome == true) {
+    //         alert('ok');
+    //     } else {
+    //         alert('No OK');
+    //     }
+    // }
     
