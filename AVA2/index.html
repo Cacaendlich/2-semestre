@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="#" id="formcadastro" onsubmit="validar()">
+    <form action="#" id="formcadastro" onsubmit="validar(event)">
 
         <h1>CADASTRO</h1>
 
@@ -38,9 +38,9 @@
             <label for="tEstadoCivil">Estado Civil: </label>
             <select name="tEstadoCivil" id="cEstadoCivil" class="input-height" required>
                 <option value="">Selecione uma opção</option>
-                <option value="1">Solteiro(a)</option>
-                <option value="2">Casado(a)</option>
-                <option value="3">Outros</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="outro">Outros</option>
             </select>
         </p>
 
