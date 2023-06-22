@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* form {
+    border: 1px solid;
+
+} */
+
+body {
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif)
+  }
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgb(195,34,135);
+    background: linear-gradient(0deg, rgb(45, 9, 112) 0%, rgba(99, 253, 227, 0.726) 100%);
+   
+}
+
+html, body, #formcadastro{
+    width: 500px;
+    margin: 30px auto;
+}
+
+h1, p, fieldset{
+    width: 80%;
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    color: rgb(45, 9, 112);
+}
+
+input,select{
+    border: none ;
+    border-radius: 3px;
+}
+
+.input-height{
+    height: 20px;
+}
+
+.enviar-limpar{
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 9, 112);
+}
+
+fieldset{
+    border-color: #ffffff;
+}
+
