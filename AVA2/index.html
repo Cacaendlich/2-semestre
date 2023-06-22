@@ -13,12 +13,12 @@
 
         <p>
             <label for="nome">Nome:
-            <input type="text" name="tName" id="cName" class="input-height" size="30" maxlength="30" placeholder="Nome Completo" required>  </label>
+            <input type="text" name="tName" id="cName" onblur="validarNome()" class="input-height" size="30" maxlength="30" placeholder="Nome Completo" required>  </label>
         </p>
 
         <p>
             <label for="nome">Email:
-            <input type="email" name="tEmail" id="cEmail"  class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com"> </label>
+            <input type="email" name="tEmail" id="cEmail" class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com"> </label>
         </p>
 
 
@@ -40,7 +40,7 @@
                 <option value="">Selecione uma opção</option>
                 <option value="solteiro">Solteiro(a)</option>
                 <option value="casado">Casado(a)</option>
-                <option value="outro">Outros</option>
+                <option value="outros">Outros</option>
             </select>
         </p>
 
