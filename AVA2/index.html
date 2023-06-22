@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" id="formcadastro">
+
+        <h1>CONTATO</h1>
+
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="tName" id="cName" onblur="validarNome()" class="input-height" size="30" maxlength="30" placeholder="Nome Completo" required>
+        </p>
+
+        <p>
+            <label for="nome">Email: </label>
+            <input onblur="validarEmail()"  type="email" name="tEmail" id="cEmail"  class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com">
+        </p>
+
+
+        <p>
+            <label for="">Data de Nascimento: </label>
+            <input type="date" name="tdataNascimento" id="cdataNascimento" class="input-height" placeholder="dd/mm/aaaa" required>
+        </p>
+
+        <p>
+            <label for="Tgenero">Gênero: </label>
+            <input type="radio" name="Tgenero" value="f"  required>Feminino
+            <input type="radio" name="Tgenero" value="m"  required>Masculino
+            <input type="radio" name="Tgenero" value="o"  required>Outros
+        </p>
+
+        <p>
+            <label for="tEstadoCivil">Estado Civil: </label>
+            <select name="tEstadoCivil" id="cEstadoCivil" class="input-height" required>
+                <option value="">Selecione uma opção</option>
+                <option value="1">Solteiro(a)</option>
+                <option value="2">Casado(a)</option>
+                <option value="3">Outros</option>
+            </select>
+        </p>
+
+        <fieldset> <legend>Campos de Interesse</legend>
+            <input type="checkbox">Análise
+            <input type="checkbox">Banco de dados
+            <input type="checkbox">Desenvolvimento
+            <br>
+            <input type="checkbox">Engenharia de software
+            <input type="checkbox">Redes de computadores
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar" class="input-height enviar-limpar" onclick="validar()">
+            <input type="reset" value="Limpar" class="input-height enviar-limpar">
+        </p>
+        
+    </form>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
