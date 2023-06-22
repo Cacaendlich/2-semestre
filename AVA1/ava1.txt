@@ -1,0 +1,23 @@
+
+Nome completo - <input type="text">
+Data de nascimento - <input type="date">
+Idade - <input type="number">
+Sexo - <input type="radio">
+Estado civil - <select>
+Altura - <input type="number">
+Peso - <input type="number">
+Pressão arterial - <input type="text">
+Frequência cardíaca - <input type="number">
+Alergias - <textarea>
+Medicamentos em uso - <textarea>
+Cirurgias prévias - <textarea>
+Histórico familiar de doenças - <textarea>
+Endereço completo (Cidade - <input type="text"> Estado - <select> CEP - <input type="number">)
+Telefone celular - <input type="tel">
+contato de emergência - <input type="tel">
+E-mail - <input type="email">
+Convênio médico - <select>
+Número do cartão do convênio médico - <input type="text">
+Data de validade do convênio médico - <input type="date">
+Como ficou sabendo do consultório médico - <input type="checkbox">
+Observações adicionais - <textarea>
