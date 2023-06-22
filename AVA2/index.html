@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="#" id="formcadastro">
+    <form action="#" id="formcadastro" onsubmit="validar()">
 
-        <h1>CONTATO</h1>
+        <h1>CADASTRO</h1>
 
         <p>
             <label for="nome">Nome: </label>
-            <input type="text" name="tName" id="cName" onblur="validarNome()" class="input-height" size="30" maxlength="30" placeholder="Nome Completo" required>
+            <input type="text" name="tName" id="cName" class="input-height" size="30" maxlength="30" placeholder="Nome Completo" required>
         </p>
 
         <p>
             <label for="nome">Email: </label>
-            <input onblur="validarEmail()"  type="email" name="tEmail" id="cEmail"  class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com">
+            <input type="email" name="tEmail" id="cEmail"  class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com">
         </p>
 
 
@@ -55,7 +55,7 @@
 
 
         <p>
-            <input type="submit" value="Enviar" class="input-height enviar-limpar" onclick="validar()">
+            <input type="submit" value="Enviar" class="input-height enviar-limpar">
             <input type="reset" value="Limpar" class="input-height enviar-limpar">
         </p>
         
