@@ -18,7 +18,7 @@
 
         <p>
             <label for="nome">Email:
-            <input type="email" name="tEmail" id="cEmail" class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com"> </label>
+            <input type="email" name="tEmail" id="cEmail" onchange="validarEmail()" class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com" required> </label>
         </p>
 
 
@@ -36,7 +36,7 @@
 
         <p>
             <label for="tEstadoCivil">Estado Civil: </label>
-            <select name="tEstadoCivil" id="cEstadoCivil" class="input-height" required>
+            <select name="tEstadoCivil" id="cEstadoCivil" onblur="campoSelecionado()" class="input-height" required>
                 <option value="">Selecione uma opção</option>
                 <option value="solteiro">Solteiro(a)</option>
                 <option value="casado">Casado(a)</option>

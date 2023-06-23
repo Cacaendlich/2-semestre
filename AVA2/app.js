@@ -2,6 +2,7 @@
         const nome = document.querySelector('input[name="tName"]').value;
         const regex = /[A-Za-z ]{15}[A-Za-z ]*/g;
         validarRegex(nome, regex);
+        return true;
     }
 
     function validarRegex(value, regex) {
@@ -13,13 +14,15 @@
     function validarEmail() {
         const email = document.querySelector('input[name="tEmail"]').value;
         
-        const isValid = email.indexO("@") > 0 && email.includes(".") >= 1 && String(email).length > 10;
+        const isValid = email.includes("@") > 0 && email.includes(".") >= 1 && String(email).length > 10;
 
         if (!isValid) {
             alert("Opa! Parece que o email inserido é inválido. Certifique-se de que o email contenha o símbolo '@', um domínio válido (como exemplo.com) e tenha pelo menos 10 caracteres.");
+            return false;
+        } else {
+            return true;
         }
         
-        return isValid;
     }
 
     function validarData(){
@@ -30,23 +33,24 @@
         
         if(!isValid){
             alert('Parece que a data de nascimento inserida é inválida. Por favor, verifique e tente novamente.');
-        }  
+        } else{
+            return true;
+        }
 
-        return isValid;
     }
 
     function campoSelecionado() {
         const estadoCivil = document.getElementById('cEstadoCivil').value;
         const dataNascimento = document.getElementById('cdataNascimento').value;
         const idade = calcularIdade(dataNascimento);
+        const isValid = idade < 15 && estadoCivil === "solteiro" ;
 
-        if (idade > 15 ) {
-            return true;
-        } else if(idade < 15 && estadoCivil !== "solteiro" ) {
+        if(isValid) {
             alert('Por favor, verifique se você possui 15 anos ou mais antes de prosseguir com o cadastro.');
             return false;
+        } else {
+            return true;
         }
-        
 
     }
 
@@ -62,5 +66,7 @@
         e.preventDefault(); // Linha utilizada para não recarregar a página quando o form recebe o submit
         if (validarNome() && validarEmail() && validarData() && campoSelecionado()) {
             alert('Dados enviados');
+        } else {
+            alert('Dados inválidos');
         }
     }
