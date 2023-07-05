@@ -1,24 +1,26 @@
     function validarNome() {
         const nome = document.querySelector('input[name="tName"]').value;
-        const regex = /[A-Za-z ]{15}[A-Za-z ]*/g;
-        validarRegex(nome, regex);
-        return true;
+        const regex = /[A-Za-z]{2}\ [A-Za-z]{2}[A-Za-z ]*/g;
+        if(validarRegex(nome, regex)){
+            alert("O nome está incompleto.");
+        } else {
+            return true;
+        }
+        
     }
 
     function validarRegex(value, regex) {
         if (!regex.test(value)) {
-            alert("O nome está incompleto.");
+            return false;
         }
     }
 
     function validarEmail() {
         const email = document.querySelector('input[name="tEmail"]').value;
-        
-        const isValid = email.includes("@") > 0 && email.includes(".") >= 1 && String(email).length > 10;
-
-        if (!isValid) {
+        const regex = /[a-z0-9A-Z._-]+@[a-z]+\.[a-z]+/g;
+       
+        if(validarRegex(email, regex)) {
             alert("Opa! Parece que o email inserido é inválido. Certifique-se de que o email contenha o símbolo '@', um domínio válido (como exemplo.com) e tenha pelo menos 10 caracteres.");
-            return false;
         } else {
             return true;
         }
