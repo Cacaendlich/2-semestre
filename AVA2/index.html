@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ponyo049.jpg" type="image/x-icon">
 </head>
 <body>
     <form action="#" id="formcadastro" onsubmit="validar(event)">
@@ -28,30 +29,44 @@
         </p>
 
         <p>
-            <label for="Tgenero">Gênero: </label>
+            <label for="Tgenero">Gênero: 
             <input type="radio" name="Tgenero" value="f"  required>Feminino
             <input type="radio" name="Tgenero" value="m"  required>Masculino
             <input type="radio" name="Tgenero" value="o"  required>Outros
+            </label>
         </p>
 
         <p>
-            <label for="tEstadoCivil">Estado Civil: </label>
+            <label for="tEstadoCivil">Estado Civil: 
             <select name="tEstadoCivil" id="cEstadoCivil" onblur="campoSelecionado()" class="input-height" required>
                 <option value="">Selecione uma opção</option>
                 <option value="solteiro">Solteiro(a)</option>
                 <option value="casado">Casado(a)</option>
                 <option value="outros">Outros</option>
             </select>
+        </label>
         </p>
 
-        <fieldset> <legend>Campos de Interesse</legend>
-            <input type="checkbox">Análise
-            <input type="checkbox">Banco de dados
-            <input type="checkbox">Desenvolvimento
+        <fieldset>
+            <legend>Campos de Interesse</legend>
+            <label>
+              <input type="checkbox">Análise
+            </label>
+            <label>
+              <input type="checkbox">Banco de dados
+            </label>
+            <label>
+              <input type="checkbox">Desenvolvimento
+            </label>
             <br>
-            <input type="checkbox">Engenharia de software
-            <input type="checkbox">Redes de computadores
-        </fieldset>
+            <label>
+              <input type="checkbox">Engenharia de software
+            </label>
+            <label>
+              <input type="checkbox">Redes de computadores
+            </label>
+          </fieldset>
+          
 
 
         <p>
