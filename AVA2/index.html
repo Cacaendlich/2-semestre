@@ -13,31 +13,31 @@
         <h1>CADASTRO</h1>
 
         <p>
-            <label for="nome">Nome:
+            <label for="cName">Nome:
             <input type="text" name="tName" id="cName" onblur="validarNome()" class="input-height" size="30" maxlength="30" placeholder="Nome Completo" required>  </label>
         </p>
 
         <p>
-            <label for="nome">Email:
+            <label for="cEmail">Email:
             <input type="email" name="tEmail" id="cEmail" onchange="validarEmail()" class="input-height" size="30" maxlength="64" placeholder="exemplo@exemplo.com" required> </label>
         </p>
 
 
         <p>
-            <label for="">Data de Nascimento:
+            <label for="cdataNascimento">Data de Nascimento:
             <input type="date" name="tdataNascimento" id="cdataNascimento" onchange="validarData()" class="input-height" placeholder="dd/mm/aaaa" required> </label>
         </p>
 
         <p>
-            <label for="Tgenero">Gênero: 
-            <input type="radio" name="Tgenero" value="f"  required>Feminino
-            <input type="radio" name="Tgenero" value="m"  required>Masculino
-            <input type="radio" name="Tgenero" value="o"  required>Outros
+            <label for="cgenero">Gênero: 
+            <input type="radio" name="Tgenero" value="f" id="cgenero" required>Feminino
+            <input type="radio" name="Tgenero" value="m" required>Masculino
+            <input type="radio" name="Tgenero" value="o" required>Outros
             </label>
         </p>
 
         <p>
-            <label for="tEstadoCivil">Estado Civil: 
+            <label for="cEstadoCivil">Estado Civil: 
             <select name="tEstadoCivil" id="cEstadoCivil" onblur="campoSelecionado()" class="input-height" required>
                 <option value="">Selecione uma opção</option>
                 <option value="solteiro">Solteiro(a)</option>
@@ -50,22 +50,23 @@
         <fieldset>
             <legend>Campos de Interesse</legend>
             <label>
-              <input type="checkbox">Análise
+              <input type="checkbox" name="analise" id="cAnalise">Análise
             </label>
             <label>
-              <input type="checkbox">Banco de dados
+              <input type="checkbox" name="bancoDados" id="cBancoDados">Banco de dados
             </label>
             <label>
-              <input type="checkbox">Desenvolvimento
+              <input type="checkbox" name="desenvolvimento" id="cDesenvolvimento">Desenvolvimento
             </label>
             <br>
             <label>
-              <input type="checkbox">Engenharia de software
+              <input type="checkbox" name="engenhariaSoftware" id="cEngenhariaSoftware">Engenharia de software
             </label>
             <label>
-              <input type="checkbox">Redes de computadores
+              <input type="checkbox" name="redesComputadores" id="cRedesComputadores">Redes de computadores
             </label>
           </fieldset>
+          
           
 
 
